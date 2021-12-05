@@ -27,7 +27,6 @@ double pierwiastek(int a) {
 
 int main(){
 	double liczba;
-	printf("%lf", 1.e-5);
 	scanf("%lf", &liczba);
 	pierwiastek(liczba);
 	return 0;
