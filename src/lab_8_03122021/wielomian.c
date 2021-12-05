@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
-TODO:
-naprawic wczytywanie tablicy
-zrobic dynamicznie alokowana tablice
-*/
 
 int potega(int liczba, int wyk) {
 	if (wyk == 0)
