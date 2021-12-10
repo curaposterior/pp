@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-/*to do
-- zaimplementowac zliczanie czasu wykoniania poszczegolnych
-funkcji (zrobic porownanie)
-*/
+
 int potega_rek(int liczba, int wyk) {
 	if (wyk == 0)
 		return 1;
