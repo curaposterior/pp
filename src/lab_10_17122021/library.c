@@ -188,6 +188,8 @@ struct book *add_book(char bookname[30],char authorname[30],int id, double ratin
     }
     return start_lib;
 }
+
+//dzięki Wojtek za funkcję sortującą
 void sort_books(struct book **pphead) {
     printf("Sortuje ksiazki...\n");
 

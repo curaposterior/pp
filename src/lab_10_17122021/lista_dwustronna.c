@@ -88,10 +88,7 @@ void wypisz(ListElemType* head) {
     }
 }
 
-/*Niestety nie wiem dlaczego ta funkcja wypisuje mi tylko pierwszy element.
-W debuggerze pojawia sie blad Segmentation fault ale nie wiem z czego wynika.
-Petla do-while przechodzi poprawnie po pierwszym elemencie.
-*/
+//jeszcze nie dziala
 void wypiszOdTylu(ListElemType* head) {
     printf("\n");
     if (head == NULL)
