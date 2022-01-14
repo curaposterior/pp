@@ -8,7 +8,7 @@ CLF = -g -DMY_DEBUG
 lista: main.o lista_powiazana.o
 	$(CC) -o lista main.o lista_powiazana.o
 main.o: main.c lista_powiazana.h
-	$(CC) -c main.c
+	$(CC) $(CLF) -c main.c
 lista_powiazana.o: lista_powiazana.c lista_powiazana.h
 	$(CC) -c lista_powiazana.c
 biblioteka:
