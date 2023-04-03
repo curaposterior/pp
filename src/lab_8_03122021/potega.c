@@ -20,16 +20,16 @@ int potega_iter(int liczba, int wyk) {
 	return wartosc;
 }
 
-int szybka_potega_rek(int podstawa, int wyk){
-	int a;
-	if (wyk == 0)
-		return 1;
-	if (wyk % 2 != 0)
-		return (podstawa*szybka_potega_rek(podstawa,wyk-1));
-	else {
-		a = szybka_potega_rek(podstawa, wyk/2);
-	}
-	return a * a;
+int szybka_potega(int podstawa, int wyk) {
+    int wynik = 1;
+    while (wyk > 0) {
+        if (wyk % 2 == 1) {
+            wynik *= podstawa;
+        }
+        podstawa *= podstawa;
+        wyk /= 2;
+    }
+    return wynik;
 }
 
 int main(void){
